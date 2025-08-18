@@ -1,0 +1,153 @@
+:root {
+    --color-primary-red: hsl(0, 78%, 62%);
+    --color-primary-cyan: hsl(180, 62%, 55%);
+    --color-primary-orange: hsl(34, 97%, 64%);
+    --color-primary-blue: hsl(212, 86%, 64%);
+
+    --color-neutral-grey-500: hsl(234, 12%, 34%);
+    --color-neutral-grey-400: hsl(212, 6%, 44%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+
+    --font-size: 15px;
+    --font-weight-light: 200;
+    --font-weight-normal: 400;
+    --font-weight-semi-bold: 600;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-neutral-grey-400);
+    line-height: 150%;
+}
+
+section {
+    background-color: var(--color-neutral-white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+}
+
+.heading h2 {
+    font-size: 32px;
+    font-weight: var(--font-weight-light);
+}
+
+.heading h3 {
+    font-size: 32px;
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--color-neutral-grey-500);
+}
+
+.cards {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+    /* align-items: center; */
+    background-color: var(--color-neutral-white);
+    box-shadow: 0px 8px 8px 0px hsla(212, 60%, 48%, 0.16);
+    padding: 40px;
+    border-radius: 8px;
+    border-top: 8px solid;
+}
+
+.card h3 {
+    font-weight: var(--font-weight-semi-bold);
+    font-size: 20px;
+    color: var(--color-neutral-grey-500);
+}
+
+.card p {
+    color: var(--color-neutral-grey-400);
+}
+
+.card img {
+    align-self: flex-end;
+    margin-top: 32px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1;
+    /* min-width: 0; */
+}
+
+.supervisor {
+    border-color: var(--color-primary-cyan);
+    flex: 1;
+}
+
+.team {
+    border-color: var(--color-primary-red);
+}
+
+.karma {
+    border-color: var(--color-primary-orange);
+}
+
+.calculator {
+    border-color: var(--color-primary-blue);
+    flex: 1;
+}
+
+
+@media (max-width: 700px) {
+    
+    section {
+        height: auto;
+        padding: 40px 0px;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        width: 90%;
+    }
+
+    .middle {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+}
