@@ -1,0 +1,132 @@
+:root {
+    --color-primary-Gold-500: hsl(31, 77%, 52%);
+    --color-primary-Cyan-800: hsl(184, 100%, 22%);
+    --color-primary-Green-950: hsl(179, 100%, 13%);
+
+    --color-neutral-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --color-neutral-Gray-100: hsl(0, 0%, 95%);
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    --font-size-body: 15px
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Big-Shoulders;
+    src: url(fonts/Big_Shoulders/BigShoulders-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Lexend;
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    /* margin: auto; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-white-paragraphs);
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 16px;
+    overflow: hidden;
+    color: var(--color-neutral-white-paragraphs);
+}
+
+.grid {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+.item-1 {
+    background-color: var(--color-primary-Gold-500);
+}
+
+.item-2 {
+    background-color: var(--color-primary-Cyan-800);
+}
+
+.item-3 {
+    background-color: var(--color-primary-Green-950);
+}
+
+.grid a {
+    text-decoration: none;
+    background-color: var(--color-neutral-white-paragraphs);
+    padding: 16px 0px;
+    text-align: center;
+    width: 160px;
+    border-radius: 100px;
+    margin-top: 48px;
+}
+
+.grid p {
+    line-height: 200%;
+    font-weight: var(--font-weight-normal);
+}
+
+.grid h3 {
+    font-family: Big-Shoulders;
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+}
+
+.grid img {
+    width: 80px;
+}
+
+.item-1 a {
+    color: var(--color-primary-Gold-500);
+}
+
+.item-2 a {
+    color: var(--color-primary-Cyan-800);
+}
+
+.item-3 a {
+    color: var(--color-primary-Green-950);
+}
+
+
+
+@media (max-width: 700px) {
+
+    .grid-items {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        padding: 48px;
+        gap: 32px;
+    }
+
+    .grid a {
+        margin-top: 0px;
+    }
+
+    .grid p {
+        font-size: 14px;
+    }
+}
