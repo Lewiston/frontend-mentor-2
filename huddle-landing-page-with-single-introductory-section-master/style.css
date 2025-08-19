@@ -140,6 +140,7 @@ svg:hover {
     main {
         height: auto;
         padding: 10rem 0rem;
+        background-image: url(images/bg-mobile.svg);
     }
 
     .container {
