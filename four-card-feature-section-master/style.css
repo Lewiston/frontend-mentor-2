@@ -61,6 +61,7 @@ section {
 
 .cards {
     width: 90%;
+    /* max-width: 1200px; */
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -101,13 +102,13 @@ section {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    flex: 1;
+    /* flex: 1; */
     /* min-width: 0; */
 }
 
 .supervisor {
     border-color: var(--color-primary-cyan);
-    flex: 1;
+    /* flex: 1; */
 }
 
 .team {
@@ -120,7 +121,7 @@ section {
 
 .calculator {
     border-color: var(--color-primary-blue);
-    flex: 1;
+    /* flex: 1; */
 }
 
 
