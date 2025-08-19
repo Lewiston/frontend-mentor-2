@@ -35,9 +35,8 @@ section {
     background-color: var(--color-primary-blue-600);
     background-image: url(images/bg-pattern-top.svg), 
                       url(images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
-    background-size: 50% 50%, 50% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom 50vh right 50vw, top 50vh left 50vw ;
 }
 
 .card {
