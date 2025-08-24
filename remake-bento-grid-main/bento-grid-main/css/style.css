@@ -217,3 +217,37 @@ section {
     background-color: var(--color-yellow-500);
 }
 
+
+@media (max-width: 800px) {
+
+    section {
+        padding: 40px 0px;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid {
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .grid img {
+        width: 100%;
+    }
+    
+    .item-5 {
+        flex-direction: column;
+    }
+
+    .item-1 h2 {
+        font-size: 48px;
+    }
+
+    .item-4 img {
+        width: 80%;
+    }
+}
