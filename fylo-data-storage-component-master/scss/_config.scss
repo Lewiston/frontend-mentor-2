@@ -1,0 +1,23 @@
+
+
+@function weight($size) {
+    @return map-get($font-weight, $size);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    // font-family: Raleway-Italic;
+    line-height: 150%;
+    font-size: $body-font-size;
+    font-weight: (regular);
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}

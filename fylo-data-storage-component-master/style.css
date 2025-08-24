@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Raleway;
+    src: url(font/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Italic;
+    src: url(font/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Raleway;
+}
+
+.container {
+    background-image: url('/images/bg-desktop.png');
+    background-position: bottom -8vh left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        background-image: url('images/bg-mobile.png');
+        background-position: center center;
+        background-size: cover;
+    }
+/* 
+    .content {
+        flex-direction: column;
+    } */
+}
