@@ -72,7 +72,7 @@ section {
     transition: 0.25s ease-in;
 }
 
-.grid:hover {
+.grid:hover, .grid:active {
     transform: scale(1.05, 1.05);
 }
 
@@ -232,7 +232,7 @@ section {
 
     .grid {
         padding: 40px;
-        gap: 40px;
+        gap: 24px;
     }
 
     .grid img {
@@ -244,7 +244,8 @@ section {
     }
 
     .item-1 h2 {
-        font-size: 48px;
+        font-size: 44px;
+        margin-bottom: 0px;
     }
 
     .item-4 img {
